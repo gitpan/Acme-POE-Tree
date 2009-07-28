@@ -10,18 +10,24 @@ WriteMakefile(
 	VERSION_FROM  => 'lib/Acme/POE/Tree.pm',
 	LICENSE       => 'perl',
 	ABSTRACT      => "Merry Christmas from the POE Team",
+	META_ADD     => {
+		resources  => {
+			license    => 'http://dev.perl.org/licenses/',
+			repository => 'http://thirdlobe.com/svn/acme-poe-tree/trunk'
+		},
+	},
 	dist          => {
 		COMPRESS    => 'gzip -9f',
 		SUFFIX      => 'gz',
 		PREOP       => (
 			'svn-log.perl | tee ./$(DISTNAME)-$(VERSION)/CHANGES > ./CHANGES ; ' .
-			'perldoc lib/Acme/POE/Tree.pm | ' .
+			'LANG=C perldoc lib/Acme/POE/Tree.pm | ' .
 			'tee ./$(DISTNAME)-$(VERSION)/README > README'
 		),
 	},
 	PREREQ_PM     => {
 		'IO::Tty' => 1.07,
 		'Curses'  => 1.15,
-		'POE'     => 1.003,
+		'POE'     => 1.007,
 	},
 );

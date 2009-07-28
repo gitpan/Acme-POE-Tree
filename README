@@ -3,10 +3,10 @@ Acme::POE::Tree(3)    User Contributed Perl Documentation   Acme::POE::Tree(3)
 
 
 NNAAMMEE
-       Acme::POE::Tree − an animated christmas tree
+       Acme::POE::Tree - an animated christmas tree
 
 SSYYNNOOPPSSIISS
-               perl −MAcme::POE::Tree −e ’Acme::POE::Tree−>new()−>run()’
+               perl -MAcme::POE::Tree -e 'Acme::POE::Tree->new()->run()'
 
 DDEESSCCRRIIPPTTIIOONN
        Acme::POE::Tree uses IO::Tty to learn the current terminal size, Curses
@@ -21,28 +21,37 @@ PPUUBBLLIICC MMEETTHHOODDSS
        after a short amount of time:
 
                use Acme::POE::Tree;
-               my $tree = Acme::POE::Tree−>new(
+               my $tree = Acme::POE::Tree->new(
                        {
                                star_delay => 1.5,  # shimmer star every 1.5 sec
                                light_delay => 2,   # twinkle lights every 2 sec
                                run_for => 10,      # automatically exit after 10 sec
                        }
                );
-               $tree−>run();
+               $tree->run();
 
        rruunn
 
-       Run the tree until the user decides they’ve had enough.
+       Run the tree until the user decides they've had enough.
 
 AAUUTTHHOORR
        Rocco Caputo <rcaputo@cpan.org> with debugging and feedback from
        irc.perl.org channel #poe.
 
+BBUUGG TTRRAACCKKEERR
+       https://rt.cpan.org/Dist/Display.html?Status=Active&Queue=Acme-POE-Tree
+
+RREEPPOOSSIITTOORRYY
+       http://thirdlobe.com/svn/acme-poe-tree/
+
+OOTTHHEERR RREESSOOUURRCCEESS
+       http://search.cpan.org/dist/Acme-POE-Tree/
+
 CCOOPPYYRRIIGGHHTT
-       Copyright (c) 2008, Rocco Caputo.  All Rights Reserved.  This module is
-       free software.  It may be used, redistributed and/or modified under the
-       same terms as Perl itself.
+       Copyright (c) 2008-2009, Rocco Caputo.  All Rights Reserved.  This
+       module is free software.  It may be used, redistributed and/or modified
+       under the same terms as Perl itself.
 
 
 
-perl v5.8.8                       2008‐12‐15                Acme::POE::Tree(3)
+perl v5.10.0                      2009-07-28                Acme::POE::Tree(3)
