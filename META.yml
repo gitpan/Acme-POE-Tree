@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Acme-POE-Tree
-version:            1.020
+version:            1.021
 abstract:           Merry Christmas from the POE Team
 author:
     - Rocco Caputo <rcaputo@cpan.org>
@@ -16,7 +16,7 @@ requires:
     POE:      1.007
 resources:
     license:     http://dev.perl.org/licenses/
-    repository:  http://thirdlobe.com/svn/acme-poe-tree/trunk
+    repository:  http://github.com/rcaputo/acme-poe-tree
 no_index:
     directory:
         - t
