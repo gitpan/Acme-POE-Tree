@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Acme-POE-Tree
-version:            1.021
+version:            1.022
 abstract:           Merry Christmas from the POE Team
 author:
     - Rocco Caputo <rcaputo@cpan.org>
